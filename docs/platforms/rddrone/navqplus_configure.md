@@ -1,0 +1,1 @@
+# Configure NavQ+ for RDDRONE

@@ -1,0 +1,119 @@
+site_name: Dev Guides
+site_description: 'Development guides for NXP® Mobile Robotics'
+site_author: 'Rudis Laboratories LLC'
+site_url: 'https://nxp.guide'
+
+repo_name: 'rudislabs/nxp_docs'
+repo_url: 'https://github.com/rudislabs/nxp_docs'
+
+edit_uri: 'edit/main/docs/'
+
+docs_dir: docs/
+
+theme:
+  language: en
+  name: material
+  custom_dir: theme_overrides
+  logo: assets/nxp_logo_640.png
+  favicon: assets/nxp_logo.png
+
+extra_css:
+  - stylesheets/nxp-palette.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rudislabs
+
+copyright: Copyright &copy; 2021-2022 Rudis Laboratories LLC. All Rights Reserved.
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - macros
+
+nav:
+    - Home: index.md
+    - Processors:
+      - i.MX: 
+        - i.MX 8: processors/imx-8.md
+        - i.MX RT: processors/imx-rt.md
+      - S32:
+        - S32K: processors/s32k.md
+        - Kinetis: processors/kinetis.md
+    - Boards:
+      - NavQ+:
+        - Software: 
+          - Build Image: boards/navqplus/build_image.md 
+          - Flash Image: boards/navqplus/flash_image.md
+          - Configure:
+            - Simulation: boards/navqplus/simulation.md
+            - Platforms:
+              - Buggy 3: platforms/buggy_3/navqplus_configure.md
+              - Create® 3: platforms/create_3/navqplus_configure.md
+              - El Mandadero: platforms/el_mandadero/navqplus_configure.md
+              - RDDRONE: platforms/rddrone/navqplus_configure.md
+            - Sensors: sensors/navqplus_configure.md
+        - Hookup Guide:
+          - Platforms:
+            - Buggy 3: platforms/buggy_3/navqplus_hookup.md
+            - Create® 3: platforms/create_3/navqplus_hookup.md
+            - El Mandadero: platforms/el_mandadero/navqplus_hookup.md
+            - RDDRONE: platforms/rddrone/navqplus_hookup.md
+          - Sensors: sensors/navqplus_hookup.md
+        - Printable Accessories: boards/navqplus/printable.md
+    - Platforms:
+      - Simulation:
+        - Overview: platforms/simulation.md
+      - Buggy 3: 
+        - Hardware: platforms/buggy_3.md
+        - Simulation: platforms/buggy_3/simulation.md
+        - Printable Accessories: platforms/buggy_3/printable.md
+      - Create® 3:
+        - Hardware: platforms/create_3.md
+        - Simulation: platforms/create_3/simulation.md
+        - Printable Accessories: platforms/create_3/printable.md
+      - El Mandadero:
+        - Hardware: platforms/el_mandadero.md
+        - Simulation: platforms/el_mandadero/simulation.md
+        - Printable Accessories: platforms/el_mandadero/printable.md
+      - RDDRONE:
+        - Hardware: platforms/rddrone.md
+        - Simulation: platforms/rddrone/simulation.md
+        - Printable Accessories: platforms/rddrone/printable.md
+    - Sensors:
+      - Hardware: sensors/sensors.md
+      - Simulation: sensors/simulation.md
+      - Printable Accessories: sensors/printable.md
+    - Simulation:
+      - Gazebo:
+        - Install: simulation/gazebo/install.md
+        - Configure: simulation/gazebo/configure.md
+        - Run: simulation/gazebo/run.md
+    - Competitions:
+      - NXP® Hover Games: "https://www.hovergames.com/"
+      - NXP® AIM: "https://nxpaimindia.com/"
+      - NXP® Cup: "https://nxpcup.nxp.com/"
+    - Resources:
+      - Contact: resources/contact.md
+      - Purchase: resources/purchase.md
+      - Contribute: resources/contribute.md
+    - Partnerships:
+      - Companies:
+        - Rudis Laboratories: "https://www.rudislabs.com/"
+      - Communities:
+        - CogniPilot: "https://www.cognipilot.com/"
+        - PX4: "https://px4.io/"
+
+
+
+
+

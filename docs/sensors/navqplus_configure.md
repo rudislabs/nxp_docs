@@ -1,0 +1,1 @@
+# Configure Sensors on NavQ+

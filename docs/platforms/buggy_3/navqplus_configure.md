@@ -1,0 +1,1 @@
+# Configure NavQ+ for Buggy 3
